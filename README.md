@@ -4,6 +4,7 @@
 <br />
 https://www.youtube.com/watch?v=Oz3W-LKfafE&t=160s
 <br />
+
 ### Some Important notes:
 
 - Please know that I use python venv while doing this. There might be differences with your installed library. Although this project is straighforward, it should not cause much issue.
