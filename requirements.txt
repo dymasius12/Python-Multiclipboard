@@ -1,0 +1,4 @@
+clipboard  0.0.4
+pip        22.2.2
+pyperclip  1.8.2
+setuptools 49.2.1
