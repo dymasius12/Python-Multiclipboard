@@ -30,12 +30,23 @@ if len(sys.argv) == 2:
     
     data = load_data(SAVED_DATA)
 
+    # Basically inputing the value key to the json file
     if command == "save":
         key = input("enter a key: ")
         data[key] = clipboard.paste()
         save_data(SAVED_DATA,data)
+        print("data is saved!")
+
     elif command == "load":
-        print("load")
+
+        #ask the key and make sure it exists!
+        key = input("Enter a key: ")
+        if key in data: 
+            clipboard.copy(data[key])
+            print("Data is copied into the clipboard!")
+        else:
+            print("Key does not exist!")
+
     elif command =="list":
         print("list")
     else:
